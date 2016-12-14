@@ -7,7 +7,7 @@
 </head>
 
 <body>
-  <h2>Update CSS Variables with <span class='hl'>JavaScript</span></h2>
+  <h2>Update <span class="h2">CSS Variables</span> with <span class="h2">JavaScript</span></h2>
 
   <div class="controls">
     <label for="spacing">Spacing:</label>
@@ -17,13 +17,23 @@
     <input type="range" name="blur" min="0" max="25" value="10" data-sizing="px">
 
     <label for="base">Base Color:</label>
-    <input type="color" name="base" value="#ffc600">
+    <input type="color" name="base" value="#4C87EE">
   </div>
 
-  <img src="https://source.unsplash.com/7bwQXzbF6KE/800x500">
+  <img src="https://cdn.pixabay.com/photo/2016/11/29/10/07/animal-1868911_960_720.jpg">
 
 
 <script>
+  const inputs = document.querySelectorAll('.controls input');
+
+  function handleUpdate(){
+    const suffix = this.dataset.sizing || '';
+    document.documentElement.style.setProperty(`--${this.name}`, this.value+ suffix);
+
+  }
+
+  inputs.forEach(input => input.addEventListener ('change', handleUpdate));
+  inputs.forEach(input => input.addEventListener ('mousemove', handleUpdate));
 
 
 </script>

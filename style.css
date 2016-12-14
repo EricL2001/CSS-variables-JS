@@ -1,4 +1,18 @@
+:root {
+	--base: #4C87EE;
+	--spacing: 10px;
+	--blur: 10px;
+}
 
+img {
+	padding: var(--spacing);
+	background: var(--base);
+	filter: blur(var(--blur));
+}
+
+.h2 {
+	color: var(--base);
+}
 
 /*
  misc styles, nothing to do with CSS variables
@@ -9,11 +23,11 @@ body {
  }
 
 body {
-    background: #193549;
+    background: #D51647;
     color: white;
-    font-family: 'helvetica neue', sans-serif;
+    font-family: 'verdana', sans-serif;
     font-weight: 100;
-    font-size: 50px;
+    font-size: 40px;
 }
 
 .controls {
