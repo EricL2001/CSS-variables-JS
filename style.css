@@ -1,5 +1,5 @@
 :root {
-	--base: #4C87EE;
+	--base: ##6ea148;
 	--spacing: 10px;
 	--blur: 10px;
 }
@@ -23,7 +23,7 @@ body {
  }
 
 body {
-    background: #D51647;
+    background: #7b48a1;
     color: white;
     font-family: 'verdana', sans-serif;
     font-weight: 100;
